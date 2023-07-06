@@ -1,0 +1,32 @@
+scopeName: 'text.tasklist'
+name: 'Tasklist'
+fileTypes: ['tasklist', 'todo']
+injectionSelector: 'source.embedded.tasklist'
+limitLineLength: false
+patterns: [
+  {
+    match: '^ *.+:$'
+    name: 'text.header.tasklist'
+  }
+  {
+    match: '^ *(☐)( \\[\.+?\])?(.*)$'
+    captures:
+      1: name: 'tick.todo.tasklist'
+      2: name: 'time.todo.tasklist'
+      3: name: 'text.todo.tasklist'
+  }
+  {
+    match: '^ *(✔)( \\[\.+?\])?(.*)$'
+    captures:
+      1: name: 'tick.done.tasklist'
+      2: name: 'time.done.tasklist'
+      3: name: 'text.done.tasklist'
+  }
+  {
+    match: '^ *(✘)( \\[\.+?\])?(.*)$'
+    captures:
+      1: name: 'tick.fail.tasklist'
+      2: name: 'time.fail.tasklist'
+      3: name: 'text.fail.tasklist'
+  }
+]

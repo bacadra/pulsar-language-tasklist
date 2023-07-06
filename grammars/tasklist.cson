@@ -9,21 +9,21 @@ patterns: [
     name: 'text.header.tasklist'
   }
   {
-    match: '^ *(☐)( \\[\.+?\])?(.*)$'
+    match: '^ *(☐) *(\\[\.+?\])? *(.*?) *$'
     captures:
       1: name: 'tick.todo.tasklist'
       2: name: 'time.todo.tasklist'
       3: name: 'text.todo.tasklist'
   }
   {
-    match: '^ *(✔)( \\[\.+?\])?(.*)$'
+    match: '^ *(✔) *(\\[\.+?\])? *(.*?) *$'
     captures:
       1: name: 'tick.done.tasklist'
       2: name: 'time.done.tasklist'
       3: name: 'text.done.tasklist'
   }
   {
-    match: '^ *(✘)( \\[\.+?\])?(.*)$'
+    match: '^ *(✘) *(\\[\.+?\])? *(.*?) *$'
     captures:
       1: name: 'tick.fail.tasklist'
       2: name: 'time.fail.tasklist'

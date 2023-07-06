@@ -1,0 +1,20 @@
+.syntax--tasklist {
+  &.syntax--header {
+    color: @text-color-warning;
+  }
+  &.syntax--time {
+    color: @text-color-subtle;
+  }
+  &.syntax--todo {
+    &.syntax--tick { color: @text-color-info }
+    &.syntax--text { }
+  }
+  &.syntax--done {
+    &.syntax--tick { color: @text-color-success }
+    &.syntax--text { color: @text-color-subtle }
+  }
+  &.syntax--fail {
+    &.syntax--tick { color: @text-color-error }
+    &.syntax--text { color: @text-color-subtle }
+  }
+}

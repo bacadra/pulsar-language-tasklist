@@ -5,11 +5,6 @@ injectionSelector: 'source.embedded.tasklist'
 limitLineLength: false
 patterns: [
   {
-    match: '^ *(.+):$'
-    name: 'text.header.tasklist'
-    captures: 1: patterns: [{ include: '#text' }]
-  }
-  {
     match: '^ *(☐) *(\\[\.+?\])? *(.*?) *$'
     captures:
       1: name: 'tick.todo.tasklist'
@@ -31,6 +26,11 @@ patterns: [
       1: name: 'tick.fail.tasklist'
       2: name: 'time.fail.tasklist'
       3: name: 'text.fail.tasklist'
+  }
+  {
+    match: '^ *(.+):$'
+    name: 'text.header.tasklist'
+    captures: 1: patterns: [{ include: '#text' }]
   }
 ]
 repository:

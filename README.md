@@ -41,8 +41,11 @@ or directly [language-tasklist](https://web.pulsar-edit.dev/packages/language-ta
 
 * Ticks `☐`, `✔`, `✘` are unicode characters, so it is valid as a plain text document.
 * Any line that ends with `:` will be considered a header.
+* Stamps are supported.
 * A indentation doesn't matter and user can use it as like.
 * Timestamps are supported in square bracket after tick.
+* Everything is a text, so comments has no use.
+* `pass`, `info`, `math` and `code` markups are supported.
 
 ## Customization
 

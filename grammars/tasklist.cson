@@ -38,8 +38,8 @@ repository:
     patterns: [
       { include: '#passMarkup' }
       { include: '#infoMarkup' }
-      { include: '#codeMarkup' }
       { include: '#mathMarkup' }
+      { include: '#codeMarkup' }
     ]
   }
   passMarkup: {
@@ -50,11 +50,11 @@ repository:
     match: '\\*.*?\\*'
     name: 'markup.info.tasklist'
   }
-  codeMarkup: {
-    match: '`.*?`'
-    name: 'markup.code.tasklist'
-  }
   mathMarkup: {
     match: '\\$.*?\\$'
     name: 'markup.math.tasklist'
+  }
+  codeMarkup: {
+    match: '`.*?`'
+    name: 'markup.raw.tasklist'
   }

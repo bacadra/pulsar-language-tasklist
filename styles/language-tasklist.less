@@ -4,6 +4,22 @@
   }
   &.syntax--time {
     color: @text-color-subtle;
+    outline: 1px solid;
+  }
+  &.syntax--markup {
+    &.syntax--pass {
+      color: @text-color-subtle;
+      text-decoration: line-through;
+    }
+    &.syntax--info {
+      color: @text-color-info;
+    }
+    &.syntax--code {
+      color: @ui-site-color-2;
+    }
+    &.syntax--math {
+      color: @ui-site-color-4;
+    }
   }
   &.syntax--todo {
     &.syntax--tick { color: @text-color-info }

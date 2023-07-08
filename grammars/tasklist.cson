@@ -5,15 +5,18 @@ injectionSelector: 'source.embedded.tasklist'
 limitLineLength: false
 patterns: [
   {
-    match: '^ *.+:$'
+    match: '^ *(.+):$'
     name: 'text.header.tasklist'
+    captures: 1: patterns: [{ include: '#text' }]
   }
   {
     match: '^ *(☐) *(\\[\.+?\])? *(.*?) *$'
     captures:
       1: name: 'tick.todo.tasklist'
       2: name: 'time.todo.tasklist'
-      3: name: 'text.todo.tasklist'
+      3:
+        name: 'text.todo.tasklist'
+        patterns: [{ include: '#text' }]
   }
   {
     match: '^ *(✔) *(\\[\.+?\])? *(.*?) *$'
@@ -30,3 +33,28 @@ patterns: [
       3: name: 'text.fail.tasklist'
   }
 ]
+repository:
+  text: {
+    patterns: [
+      { include: '#passMarkup' }
+      { include: '#infoMarkup' }
+      { include: '#codeMarkup' }
+      { include: '#mathMarkup' }
+    ]
+  }
+  passMarkup: {
+    match: '~.*?~'
+    name: 'markup.pass.tasklist'
+  }
+  infoMarkup: {
+    match: '\\*.*?\\*'
+    name: 'markup.info.tasklist'
+  }
+  codeMarkup: {
+    match: '`.*?`'
+    name: 'markup.code.tasklist'
+  }
+  mathMarkup: {
+    match: '\\$.*?\\$'
+    name: 'markup.math.tasklist'
+  }

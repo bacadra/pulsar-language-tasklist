@@ -32,6 +32,7 @@ patterns: [
     name: 'text.header.tasklist'
     captures: 1: patterns: [{ include: '#text' }]
   }
+  { include: '#text' }
 ]
 repository:
   text: {

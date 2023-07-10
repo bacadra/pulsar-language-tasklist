@@ -5,27 +5,24 @@ injectionSelector: 'source.embedded.tasklist'
 limitLineLength: false
 patterns: [
   {
-    match: '^ *(☐) *( \.+? )? *(.*?) *$'
+    match: '^ *(☐) *(.*?) *$'
     captures:
       1: name: 'tick.todo.tasklist'
-      2: name: 'time.todo.tasklist'
-      3:
+      2:
         name: 'text.todo.tasklist'
         patterns: [{ include: '#text' }]
   }
   {
-    match: '^ *(✔) *( \.+? )? *(.*?) *$'
+    match: '^ *(✔) *(.*?) *$'
     captures:
       1: name: 'tick.done.tasklist'
-      2: name: 'time.done.tasklist'
-      3: name: 'text.done.tasklist'
+      2: name: 'text.done.tasklist'
   }
   {
-    match: '^ *(✘) *( \.+? )? *(.*?) *$'
+    match: '^ *(✘) *(.*?) *$'
     captures:
       1: name: 'tick.fail.tasklist'
-      2: name: 'time.fail.tasklist'
-      3: name: 'text.fail.tasklist'
+      2: name: 'text.fail.tasklist'
   }
   {
     match: '^ *(.+):$'

@@ -19,6 +19,8 @@
 
 Simply tasklist for `TODO`, `*.todo` and `*.tasklist` files. A set of tools has been provided by [tasklist-tools](https://github.com/bacadra/atom-tasklist-tools) package.
 
+A package has been inspired by [tasks](https://github.com/irrationalistic/atom-tasks) package.
+
 ## Installation
 
 ### Atom Text Editor
@@ -41,9 +43,7 @@ or directly [language-tasklist](https://web.pulsar-edit.dev/packages/language-ta
 
 * Ticks `☐`, `✔`, `✘` are unicode characters, so it is valid as a plain text document.
 * Any line that ends with `:` will be considered a header.
-* Stamps are supported.
 * A indentation doesn't matter and user can use it as like.
-* Timestamps are supported in square bracket after tick.
 * Everything is a text, so comments has no use.
 * `pass`, `info`, `math` and `code` markups are supported.
 
@@ -86,5 +86,3 @@ See my other packages for Atom & Pulsar Text Editors:
 <a href="https://github.com/bacadra/atom-tasklist-tools"><img src="https://img.shields.io/github/v/tag/bacadra/atom-tasklist-tools?style=for-the-badge&label=tasklist-tools&color=blue" alt="tasklist-tools">
 <a href="https://github.com/bacadra/atom-word-map"><img src="https://img.shields.io/github/v/tag/bacadra/atom-word-map?style=for-the-badge&label=word-map&color=blue" alt="word-map">
 </p>
-
-A package has been inspired by [tasks](https://github.com/irrationalistic/atom-tasks) package.

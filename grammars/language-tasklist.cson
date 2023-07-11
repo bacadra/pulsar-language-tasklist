@@ -25,14 +25,20 @@ patterns: [
       2: name: 'text.fail.tasklist'
   }
   {
-    match: '^ *#+ *(.+)$'
-    name: 'text.chapter.tasklist'
-    captures: 1: patterns: [{ include: '#text' }]
+    match: '^(#+) (.+)$'
+    captures:
+      1: name: 'symbol.chapter.tasklist'
+      2:
+        name: 'text.chapter.tasklist'
+        patterns: [{ include: '#text' }]
   }
   {
-    match: '^ *(.+):$'
-    name: 'text.header.tasklist'
-    captures: 1: patterns: [{ include: '#text' }]
+    match: '^(.+)(:)$'
+    captures:
+      1:
+        name: 'text.header.tasklist'
+        patterns: [{ include: '#text' }]
+      2: name: 'symbol.header.tasklist'
   }
   { include: '#text' }
 ]

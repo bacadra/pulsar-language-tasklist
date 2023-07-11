@@ -15,11 +15,11 @@
   </a>
 </p>
 
-![language-tasklist](https://github.com/bacadra/atom-language-tasklist/blob/master/assets/language-tasklist.png?raw=true)
+![language-tasklist](https://github.com/bacadra/atom-language-tasklist/blob/master/assets/example.png?raw=true)
 
-Simply tasklist for `TODO`, `*.todo` and `*.tasklist` files. A set of tools has been provided by [tasklist-tools](https://github.com/bacadra/atom-tasklist-tools) package.
+This package provides a simple tasklist for `TODO`, `*.todo`, and `*.tasklist` files. It includes a set of tools provided by the [tasklist-tools](https://github.com/bacadra/atom-tasklist-tools) package.
 
-A package has been inspired by [tasks](https://github.com/irrationalistic/atom-tasks) package.
+The inspiration for this package comes from the [tasks](https://github.com/irrationalistic/atom-tasks) and [language-checklist](https://github.com/m104/atom-language-checklist) packages.
 
 ## Installation
 
@@ -45,25 +45,49 @@ Alternatively, you can directly install [language-tasklist](https://web.pulsar-e
 
 ## Features
 
-* Ticks `☐`, `✔`, `✘` are unicode characters, so it is valid as a plain text document.
-* Any line that ends with `:` will be considered a header.
-* A indentation doesn't matter and user can use it as like.
-* Everything is a text, so comments has no use.
-* `pass`, `info`, `math` and `code` markups are supported.
+- A task is a single line in the editor that consists of a tick and text.
+- The ticks `☐`, `✔`, `✘` are represented using Unicode characters.
+- Any line starting with `#` is considered a chapter.
+- Any line ending with `:` is treated as a header.
+- Indentation does not affect functionality; use it as desired.
+- Supports of `~text~`, `*text`, `$text$`, and `` `text` `` markups.
+- Tasklists can be injected using the `tasklist` selector.
+- Two spaces indentation recommended.
+- An outline is provided by [navigation-panel](https://github.com/bacadra/atom-navigation-panel).
 
 ## Customization
 
-A custom CSS can be used to personalize tasklist. An example line-trough `done` and `fail` tasks:
+You can customize the tasklist by using custom CSS. Here are some examples:
 
-```less
-.syntax--tasklist {
-  &.syntax--done, &.syntax--fail {
-    &.syntax--text {
-      text-decoration: line-through;
+- To add a line-through effect to `done` and `fail` tasks text:
+
+  ```less
+  .syntax--tasklist {
+    &.syntax--done, &.syntax--fail {
+      &.syntax--text {
+        text-decoration: line-through;
+      }
     }
   }
-}
-```
+  ```
+
+- Set bold font-weight of chapters:
+
+  ```less
+  .syntax--tasklist {
+    &.syntax--chapter {
+      font-weight: bold;
+    }
+  }
+  ```
+
+## TODO
+
+Some future features under consideration:
+
+- [ ] Archiving of tasks
+- [ ] Global notes
+- [ ] Task tags or timestamps
 
 # Contributing [🍺](https://www.buymeacoffee.com/asiloisad)
 

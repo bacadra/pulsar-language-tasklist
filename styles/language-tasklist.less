@@ -1,6 +1,11 @@
+@import "syntax-variables";
+
 .syntax--tasklist {
+  &.syntax--chapter {
+    color: @syntax-color-tag;
+  }
   &.syntax--header {
-    color: @text-color-warning;
+    color: @syntax-color-class;
   }
   &.syntax--markup {
     &.syntax--pass {
@@ -8,12 +13,14 @@
       text-decoration: line-through;
     }
     &.syntax--info {
-      color: @text-color-info;
+      color: @syntax-color-attribute;
     }
     &.syntax--math {
-      color: @ui-site-color-4;
+      color: @syntax-color-function;
     }
-    &.syntax--code { }
+    &.syntax--code {
+      color: @syntax-color-snippet;
+    }
   }
   &.syntax--todo {
     &.syntax--tick { color: @text-color-info }

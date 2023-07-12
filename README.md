@@ -47,12 +47,11 @@ Alternatively, you can directly install [language-tasklist](https://web.pulsar-e
 
 - A task is a single line in the editor that consists of a tick and text.
 - The ticks `☐`, `✔`, `✘` are represented using Unicode characters.
-- Any line starting with `#` is considered a chapter.
-- Any line ending with `:` is treated as a header.
-- Indentation does not affect functionality; use it as desired.
-- Supports of `~text~`, `*text`, `$text$`, and `` `text` `` markups.
+- Any line starting with `#` is a chapter.
+- Any line ending with `:` is a header.
+- Supports of `~text~`, `*text*`, `$text$`, and `` `text` `` markups.
 - Tasklists can be injected using the `tasklist` selector.
-- Two spaces indentation recommended.
+- Two spaces indentation of tasks recommended.
 - An outline is provided by [navigation-panel](https://github.com/bacadra/atom-navigation-panel).
 
 ## Customization
@@ -80,14 +79,6 @@ You can customize the tasklist by using custom CSS. Here are some examples:
     }
   }
   ```
-
-## TODO
-
-Some future features under consideration:
-
-- [ ] Archiving of tasks
-- [ ] Global notes
-- [ ] Task tags or timestamps
 
 # Contributing [🍺](https://www.buymeacoffee.com/asiloisad)
 

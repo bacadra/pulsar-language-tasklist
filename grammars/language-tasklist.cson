@@ -5,6 +5,14 @@ injectionSelector: 'source.embedded.tasklist'
 limitLineLength: false
 patterns: [
   {
+    match: '^ *(▷) *(.*?) *$'
+    captures:
+      1: name: 'tick.high.tasklist'
+      2:
+        name: 'text.high.tasklist'
+        patterns: [{ include: '#text' }]
+  }
+  {
     match: '^ *(☐) *(.*?) *$'
     captures:
       1: name: 'tick.todo.tasklist'
@@ -45,25 +53,30 @@ patterns: [
 repository:
   text: {
     patterns: [
-      { include: '#passMarkup' }
-      { include: '#infoMarkup' }
-      { include: '#mathMarkup' }
-      { include: '#codeMarkup' }
+      { include: '#strikeFormat' }
+      { include: '#boldFormat' }
+      { include: '#italicFormat' }
+      { include: '#mathFormat' }
+      { include: '#rawFormat' }
     ]
   }
-  passMarkup: {
-    match: '~.*?~'
-    name: 'markup.pass.tasklist'
+  strikeFormat: {
+    match: '~.+?~'
+    name: 'format.strike.tasklist'
   }
-  infoMarkup: {
-    match: '\\*.*?\\*'
-    name: 'markup.info.tasklist'
+  boldFormat: {
+    match: '\\*.+?\\*'
+    name: 'format.bold.tasklist'
   }
-  mathMarkup: {
-    match: '\\$.*?\\$'
-    name: 'markup.math.tasklist'
+  italicFormat: {
+    match: '_.+?_'
+    name: 'format.italic.tasklist'
   }
-  codeMarkup: {
-    match: '`.*?`'
-    name: 'markup.code.tasklist'
+  mathFormat: {
+    match: '\\$.+?\\$'
+    name: 'format.math.tasklist'
+  }
+  rawFormat: {
+    match: '`.+?`'
+    name: 'format.raw.tasklist'
   }

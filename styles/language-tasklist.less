@@ -7,20 +7,26 @@
   &.syntax--header {
     color: @syntax-color-class;
   }
-  &.syntax--markup {
-    &.syntax--pass {
-      color: @text-color-subtle;
+  &.syntax--format {
+    &.syntax--strike {
       text-decoration: line-through;
     }
-    &.syntax--info {
-      color: @syntax-color-attribute;
+    &.syntax--bold {
+      font-weight: bold;
+    }
+    &.syntax--italic {
+      font-style: italic;
     }
     &.syntax--math {
       color: @syntax-color-function;
     }
-    &.syntax--code {
+    &.syntax--raw {
       color: @syntax-color-snippet;
     }
+  }
+  &.syntax--high {
+    &.syntax--tick { color: @text-color-info }
+    &.syntax--text { color: @text-color-info }
   }
   &.syntax--todo {
     &.syntax--tick { color: @text-color-info }

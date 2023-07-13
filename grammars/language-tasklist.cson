@@ -5,6 +5,14 @@ injectionSelector: 'source.embedded.tasklist'
 limitLineLength: false
 patterns: [
   {
+    match: '^ *(•) *(.*?) *$'
+    captures:
+      1: name: 'tick.info.tasklist'
+      2:
+        name: 'text.info.tasklist'
+        patterns: [{ include: '#text' }]
+  }
+  {
     match: '^ *(▷) *(.*?) *$'
     captures:
       1: name: 'tick.high.tasklist'

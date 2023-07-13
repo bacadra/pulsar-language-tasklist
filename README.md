@@ -46,7 +46,7 @@ Alternatively, you can directly install [language-tasklist](https://web.pulsar-e
 ## Features
 
 - A task is a single line in the editor that consists of a tick and text.
-- The ticks `▷` (U+25B7), `☐` (U+2610), `✔` (U+2714) and `✘` (U+2718) are represented using Unicode characters.
+- The ticks `•` (U+2022), `▷` (U+25B7), `☐` (U+2610), `✔` (U+2714) and `✘` (U+2718) are represented using Unicode characters.
 - Any line starting with `#` is a chapter, indentation is not allowed, multilevel are supported.
 - Any line ending with `:` is a header.
 - Supports of `~text~`, `*text*`, `_text_`, `$text$`, and `` `text` `` formats.

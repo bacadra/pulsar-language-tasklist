@@ -1,7 +1,6 @@
 scopeName: 'text.tasklist'
 name: 'Tasklist'
 fileTypes: ['tasklist', 'todo']
-injectionSelector: 'source.embedded.tasklist'
 limitLineLength: false
 patterns: [
   {

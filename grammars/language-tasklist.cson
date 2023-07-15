@@ -6,38 +6,38 @@ patterns: [
   {
     match: '^ *(•) *(.*?) *$'
     captures:
-      1: name: 'tick.info.tasklist'
+      1: name: 'tick.info.task.tasklist'
       2:
-        name: 'text.info.tasklist'
+        name: 'text.info.task.tasklist'
         patterns: [{ include: '#text' }]
   }
   {
     match: '^ *(▷) *(.*?) *$'
     captures:
-      1: name: 'tick.high.tasklist'
+      1: name: 'tick.high.task.tasklist'
       2:
-        name: 'text.high.tasklist'
+        name: 'text.high.task.tasklist'
         patterns: [{ include: '#text' }]
   }
   {
     match: '^ *(☐) *(.*?) *$'
     captures:
-      1: name: 'tick.todo.tasklist'
+      1: name: 'tick.todo.task.tasklist'
       2:
-        name: 'text.todo.tasklist'
+        name: 'text.todo.task.tasklist'
         patterns: [{ include: '#text' }]
   }
   {
     match: '^ *(✔) *(.*?) *$'
     captures:
-      1: name: 'tick.done.tasklist'
-      2: name: 'text.done.tasklist'
+      1: name: 'tick.done.task.tasklist'
+      2: name: 'text.done.task.tasklist'
   }
   {
     match: '^ *(✘) *(.*?) *$'
     captures:
-      1: name: 'tick.fail.tasklist'
-      2: name: 'text.fail.tasklist'
+      1: name: 'tick.fail.task.tasklist'
+      2: name: 'text.fail.task.tasklist'
   }
   {
     match: '^(#+) (.+)$'

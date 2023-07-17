@@ -17,9 +17,9 @@
 
 ![language-tasklist](https://github.com/bacadra/atom-language-tasklist/blob/master/assets/example.png?raw=true)
 
-This package provides a simple tasklist for `TODO`, `*.todo`, and `*.tasklist` files. It includes a set of tools provided by the [tasklist-tools](https://github.com/bacadra/atom-tasklist-tools) package.
+This package provides a simple tasklist for `TODO`, `*.todo`, and `*.tasklist` files.
 
-The inspiration for this package comes from the [tasks](https://github.com/irrationalistic/atom-tasks) and [language-checklist](https://github.com/m104/atom-language-checklist) packages.
+A set of tools are provided by the [tasklist-tools](https://github.com/bacadra/atom-tasklist-tools) package.
 
 ## Installation
 
@@ -45,8 +45,14 @@ Alternatively, you can directly install [language-tasklist](https://web.pulsar-e
 
 ## Features
 
-- A task is a single line in the editor that consists of a tick and text.
-- The ticks `•` (U+2022), `▷` (U+25B7), `☐` (U+2610), `✔` (U+2714) and `✘` (U+2718) are represented using Unicode characters.
+- A task is a single line that consists of a tick and text.
+- Unicode characters has been used to represent ticks.
+- A few types of ticks are available:
+  - `▷` | `U+25B7`| `high`: a high priority pending task,
+  - `☐` | `U+2610`| `todo`: a normal priority pending task,
+  - `✔` | `U+2714`| `done`: a done/pass/completed task,
+  - `✘` | `U+2718`| `fail`: a failed/rejected task.
+  - `•` | `U+2022`| `info`: a notes line,
 - Any line starting with `#` is a chapter, indentation is not allowed, multilevel are supported.
 - Any line ending with `:` is a header.
 - Supports of `~text~`, `*text*`, `_text_`, `$text$`, and `` `text` `` formats.

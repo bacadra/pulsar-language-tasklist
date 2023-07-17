@@ -4,14 +4,6 @@ fileTypes: ['tasklist', 'todo']
 limitLineLength: false
 patterns: [
   {
-    match: '^ *(•) *(.*?) *$'
-    captures:
-      1: name: 'tick.info.task.tasklist'
-      2:
-        name: 'text.info.task.tasklist'
-        patterns: [{ include: '#text' }]
-  }
-  {
     match: '^ *(▷) *(.*?) *$'
     captures:
       1: name: 'tick.high.task.tasklist'
@@ -39,6 +31,14 @@ patterns: [
       1: name: 'tick.fail.task.tasklist'
       2: name: 'text.fail.task.tasklist'
   }
+  {
+    match: '^ *(•) *(.*?) *$'
+    captures:
+      1: name: 'tick.info.task.tasklist'
+      2:
+        name: 'text.info.task.tasklist'
+        patterns: [{ include: '#text' }]
+  }  
   {
     match: '^(#+) (.+)$'
     captures:

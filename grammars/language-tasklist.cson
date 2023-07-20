@@ -40,7 +40,7 @@ patterns: [
         patterns: [{ include: '#text' }]
   }
   {
-    match: '^(#+) +(.+) *$'
+    match: '^(#+) +(.+?) *$'
     captures:
       1: name: 'symbol.chapter.tasklist'
       2:
@@ -48,7 +48,7 @@ patterns: [
         patterns: [{ include: '#text' }]
   }
   {
-    match: '^ *(.+) *(:) *$'
+    match: '^ *(.+?) *(:) *$'
     captures:
       1:
         name: 'text.header.tasklist'

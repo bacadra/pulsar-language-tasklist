@@ -53,9 +53,9 @@ Alternatively, you can directly install [language-tasklist](https://web.pulsar-e
   - `✔` | `U+2714`| `done`: a done/pass/completed task,
   - `✘` | `U+2718`| `fail`: a failed/rejected task.
   - `•` | `U+2022`| `info`: a notes line,
-- Any line starting with `#` is a chapter, indentation is not allowed, multilevel are supported.
+- Any line starting with `#` is a chapter, an indentation is not allowed, a multilevel is supported.
 - Any line ending with `:` is a header.
-- Supports of `~text~`, `*text*`, `_text_`, `$text$`, and `` `text` `` formats.
+- Supports of `~text~`, `*text*`, `_text_`, `$text$` and `` `text` `` formats.
 - Tasklists can be injected using the `tasklist` selector.
 - Two spaces indentation of tasks recommended.
 - An outline & folding are provided by [navigation-panel](https://github.com/bacadra/atom-navigation-panel).

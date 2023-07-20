@@ -38,9 +38,9 @@ patterns: [
       2:
         name: 'text.info.task.tasklist'
         patterns: [{ include: '#text' }]
-  }  
+  }
   {
-    match: '^(#+) (.+)$'
+    match: '^(#+) +(.+) *$'
     captures:
       1: name: 'symbol.chapter.tasklist'
       2:
@@ -48,7 +48,7 @@ patterns: [
         patterns: [{ include: '#text' }]
   }
   {
-    match: '^(.+)(:)$'
+    match: '^ *(.+) *(:) *$'
     captures:
       1:
         name: 'text.header.tasklist'
@@ -68,22 +68,22 @@ repository:
     ]
   }
   strikeFormat: {
-    match: '~.+?~'
+    match: '(?<=\\s|^)~(\\S{,2}|\\S.+?\\S)~(?=\\s|$)'
     name: 'format.strike.tasklist'
   }
   boldFormat: {
-    match: '\\*.+?\\*'
+    match: '(?<=\\s|^)\\*(\\S{,2}|\\S.+?\\S)\\*(?=\\s|$)'
     name: 'format.bold.tasklist'
   }
   italicFormat: {
-    match: '_.+?_'
+    match: '(?<=\\s|^)_(\\S{,2}|\\S.+?\\S)_(?=\\s|$)'
     name: 'format.italic.tasklist'
   }
   mathFormat: {
-    match: '\\$.+?\\$'
+    match: '(?<=\\s|^)\\$(\\S{,2}|\\S.+?\\S)\\$(?=\\s|$)'
     name: 'format.math.tasklist'
   }
   rawFormat: {
-    match: '`.+?`'
+    match: '(?<=\\s|^)`(\\S{,2}|\\S.+?\\S)`(?=\\s|$)'
     name: 'format.raw.tasklist'
   }

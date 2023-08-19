@@ -7,9 +7,12 @@
     "tasklist",
     "language"
   ],
+  "engines": {
+    "atom": ">=1.100.0 <2.0.0"
+  },  
   "readmeFilename": "README.md",
-  "homepage": "https://github.com/bacadra/atom-language-tasklist",
-  "url": "https://github.com/bacadra/atom-language-tasklist",
-  "repository": "https://github.com/bacadra/atom-language-tasklist",
+  "homepage": "https://github.com/bacadra/pulsar-language-tasklist",
+  "url": "https://github.com/bacadra/pulsar-language-tasklist",
+  "repository": "https://github.com/bacadra/pulsar-language-tasklist",
   "license": "MIT"
 }

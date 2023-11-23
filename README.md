@@ -32,11 +32,13 @@ Alternatively, you can run `ppm install bacadra/pulsar-language-tasklist` to ins
 - A task is a single line that consists of a tick and text.
 - Unicode characters has been used to represent ticks.
 - A few types of ticks are available:
-  - `▷` | `U+25B7`| `high`: a high priority pending task,
-  - `☐` | `U+2610`| `todo`: a normal priority pending task,
-  - `✔` | `U+2714`| `done`: a done/pass/completed task,
-  - `✘` | `U+2718`| `fail`: a failed/rejected task.
-  - `•` | `U+2022`| `info`: a notes line,
+  | Symbol | Code    | Name   | Description                    |
+  |--------|---------|--------|--------------------------------|
+  | `▷`    | `U+25B7`| `high` | a high priority pending task   |
+  | `☐`    | `U+2610`| `todo` | a normal priority pending task |
+  | `✔`    | `U+2714`| `done` | a done/pass/completed task     |
+  | `✘`    | `U+2718`| `fail` | a failed/rejected task         |
+  | `•`    | `U+2022`| `info` | a notes line                   |
 - Any line starting with `#` is a chapter, an indentation is not allowed, a multilevel is supported.
 - Any line ending with `:` is a header.
 - Supports of `~text~`, `*text*`, `_text_`, `$text$` and `` `text` `` formats.

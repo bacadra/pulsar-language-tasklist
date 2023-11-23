@@ -68,22 +68,22 @@ repository:
     ]
   }
   strikeFormat: {
-    match: '~(\\S{,2}|\\S.+?\\S)~'
+    match: '(?<!\\w)~(\\S{,2}|\\S.+?\\S)~(?!\\w)'
     name: 'format.strike.tasklist'
   }
   boldFormat: {
-    match: '\\*(\\S{,2}|\\S.+?\\S)\\*'
+    match: '(?<!\\w)\\*(\\S{,2}|\\S.+?\\S)\\*(?!\\w)'
     name: 'format.bold.tasklist'
   }
   italicFormat: {
-    match: '_(\\S{,2}|\\S.+?\\S)_'
+    match: '(?<!\\w)_(\\S{,2}|\\S.+?\\S)_(?!\\w)'
     name: 'format.italic.tasklist'
   }
   mathFormat: {
-    match: '\\$(\\S{,2}|\\S.+?\\S)\\$'
+    match: '(?<!\\w)\\$(\\S{,2}|\\S.+?\\S)\\$(?!\\w)'
     name: 'format.math.tasklist'
   }
   rawFormat: {
-    match: '`(\\S{,2}|\\S.+?\\S)`'
+    match: '(?<!\\w)`(\\S{,2}|\\S.+?\\S)`(?!\\w)'
     name: 'format.raw.tasklist'
   }

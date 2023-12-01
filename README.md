@@ -29,9 +29,9 @@ Alternatively, you can run `ppm install bacadra/pulsar-language-tasklist` to ins
 
 ## Features
 
-- A task is a single line that consists of a tick and text.
-- Unicode characters has been used to represent ticks.
-- A few types of ticks are available:
+- A task is a single line consisting of a tick and text.
+- Unicode characters have been used to represent ticks.
+- There are several types of ticks:
   | Symbol | Code    | Name   | Description                    |
   |--------|---------|--------|--------------------------------|
   | `▷`    | `U+25B7`| `high` | a high priority pending task   |
@@ -39,18 +39,19 @@ Alternatively, you can run `ppm install bacadra/pulsar-language-tasklist` to ins
   | `✔`    | `U+2714`| `done` | a done/pass/completed task     |
   | `✘`    | `U+2718`| `fail` | a failed/rejected task         |
   | `•`    | `U+2022`| `info` | a notes line                   |
-- Any line starting with `#` is a chapter, an indentation is not allowed, a multilevel is supported.
-- Any line ending with `:` is a header.
-- Supports of `~text~`, `*text*`, `_text_`, `$text$` and `` `text` `` formats.
-- Tasklists can be injected using the `tasklist` selector.
-- Two spaces indentation of tasks recommended.
-- An outline & folding are provided by [navigation-panel](https://github.com/bacadra/pulsar-navigation-panel).
+- Any line starting with `#` is a chapter, indentation is not allowed, multilevel is supported.
+- Any non-tick line ending with `:` is a header.
+- Every line ending with `:` trigger an indentation.
+- Support for `~text~`, `*text*`, `_text_`, `$text$` and ``text` `` formats.
+- Tasklists can be included using the `tasklist` selector.
+- Two space indentation is recommended.
+- Outline & folding are provided by [navigation-panel](https://github.com/bacadra/pulsar-navigation-panel).
 
 ## Customization
 
 You can customize the tasklist by using custom CSS. Here are some examples:
 
-- To add a line-through effect to `done` and `fail` tasks text:
+- Add a line-through to `done` and `fail` tasks:
 
   ```less
   .syntax--tasklist {
@@ -72,7 +73,7 @@ You can customize the tasklist by using custom CSS. Here are some examples:
   }
   ```
 
-- Change color of high tasks to eye-catching:
+- Change `high` tasks color:
 
   ```less
   .syntax--tasklist.syntax--high.syntax--text {

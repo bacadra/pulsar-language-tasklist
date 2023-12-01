@@ -1,6 +1,5 @@
 '.text.tasklist':
   'editor':
-    'softTabs': true
     'tabLength': 2
     'commentStart': ''
-    'increaseIndentPattern': '^ *.+: *$'
+    'increaseIndentPattern': '^.+?: *$'

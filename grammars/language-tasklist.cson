@@ -65,6 +65,7 @@ repository:
       { include: '#italicFormat' }
       { include: '#mathFormat' }
       { include: '#rawFormat' }
+      { include: 'text.todo' }
     ]
   }
   strikeFormat: {

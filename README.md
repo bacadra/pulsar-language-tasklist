@@ -23,9 +23,7 @@ A set of tools are provided by the [tasklist-tools](https://github.com/bacadra/p
 
 ## Installation
 
-To install `language-tasklist` search for [language-tasklist](https://web.pulsar-edit.dev/packages/language-tasklist) in the Install pane of the Pulsar settings or run `ppm install language-tasklist`.
-
-Alternatively, you can run `ppm install bacadra/pulsar-language-tasklist` to install a package directly from the Github repository.
+To install `language-tasklist` search for [language-tasklist](https://web.pulsar-edit.dev/packages/language-tasklist) in the Install pane of the Pulsar settings or run `ppm install language-tasklist`. Alternatively, you can run `ppm install bacadra/pulsar-language-tasklist` to install a package directly from the Github repository.
 
 ## Features
 

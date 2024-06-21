@@ -4,7 +4,7 @@ fileTypes: ['tasklist', 'todo']
 limitLineLength: false
 patterns: [
   {
-    match: '^ *(▷) *(.*?) *$'
+    match: '^[\t ]*(▷) *(.*?) *$'
     captures:
       1: name: 'tick.high.task.tasklist'
       2:
@@ -12,7 +12,7 @@ patterns: [
         patterns: [{ include: '#text' }]
   }
   {
-    match: '^ *(☐) *(.*?) *$'
+    match: '^[\t ]*(☐) *(.*?) *$'
     captures:
       1: name: 'tick.todo.task.tasklist'
       2:
@@ -20,19 +20,19 @@ patterns: [
         patterns: [{ include: '#text' }]
   }
   {
-    match: '^ *(✔) *(.*?) *$'
+    match: '^[\t ]*(✔) *(.*?) *$'
     captures:
       1: name: 'tick.done.task.tasklist'
       2: name: 'text.done.task.tasklist'
   }
   {
-    match: '^ *(✘) *(.*?) *$'
+    match: '^[\t ]*(✘) *(.*?) *$'
     captures:
       1: name: 'tick.fail.task.tasklist'
       2: name: 'text.fail.task.tasklist'
   }
   {
-    match: '^ *(•) *(.*?) *$'
+    match: '^[\t ]*(•) *(.*?) *$'
     captures:
       1: name: 'tick.info.task.tasklist'
       2:
@@ -48,7 +48,7 @@ patterns: [
         patterns: [{ include: '#text' }]
   }
   {
-    match: '^ *(.+?) *(:) *$'
+    match: '^[\t ]*(.+?) *(:) *$'
     captures:
       1:
         name: 'text.header.tasklist'

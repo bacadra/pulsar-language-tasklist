@@ -1,14 +1,16 @@
 # language-tasklist
 
+Tasklist simple grammar. This package is provided for `TODO`, `*.todo`, and `*.tasklist` files.
+
 ![language-tasklist](https://github.com/bacadra/pulsar-language-tasklist/blob/master/assets/example.png?raw=true)
-
-This package provides a simple tasklist for `TODO`, `*.todo`, and `*.tasklist` files.
-
-A set of tools are provided by the [tasklist-tools](https://github.com/bacadra/pulsar-tasklist-tools) package.
 
 ## Installation
 
 To install `language-tasklist` search for [language-tasklist](https://web.pulsar-edit.dev/packages/language-tasklist) in the Install pane of the Pulsar settings or run `ppm install language-tasklist`. Alternatively, you can run `ppm install bacadra/pulsar-language-tasklist` to install a package directly from the Github repository.
+
+## Tools
+
+A superset of commands is provided by the [tasklist-tools](https://github.com/bacadra/pulsar-tasklist-tools).
 
 ## Features
 
@@ -28,7 +30,7 @@ To install `language-tasklist` search for [language-tasklist](https://web.pulsar
 - Support for `~text~`, `*text*`, `_text_`, `$text$` and ``text` `` formats.
 - Tasklists can be included using the `tasklist` selector.
 - Two space indentation is recommended.
-- Outline & folding are provided by [navigation-panel](https://github.com/bacadra/pulsar-navigation-panel).
+- Outline & folding is provided by [navigation-panel](https://github.com/bacadra/pulsar-navigation-panel).
 
 ## Customization
 
@@ -66,4 +68,4 @@ You can customize the tasklist by using custom CSS. Here are some examples:
 
 # Contributing
 
-If you have any ideas on how to improve the package, spot any bugs, or would like to support the development of new features, please feel free to share them via GitHub.
+Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub — any feedback’s welcome!
